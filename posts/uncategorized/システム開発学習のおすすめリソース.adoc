@@ -1,0 +1,103 @@
+---
+title: システム開発学習のおすすめリソース（工事中）
+date: 2018-10-17 23:04:53
+updated:
+categories: [Learning]
+tags:
+- Tech
+- Learning
+---
+
+== この記事の目的
+システム開発初心者、特に若手におすすめのリソースを紹介する。
+
+++++
+<!-- more -->
+++++
+
+=== モチベーション
+Computer　Scienceを学ぼう！::
+* https://www.youtube.com/watch?v=Jt7PZEus_EM[President Obama asks America to learn computer science - YouTube]
+
+=== システム開発
+開発の流れを把握する::
+* 業務システム開発モダナイゼーションガイド
+
+++++
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=suke1031-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4822296717&linkId=d72f39c0b938f2f6502328106ccf39aa&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+    </iframe>
+++++
+
+=== プログラミング
+適正::
+* 言語能力が高い人は、得意かもね
+** https://nazology.net/archives/53469[能力の高いプログラマーほど数学力より言語能力が高い | ナゾロジー]
+
+
+=== テスト
+==== 単体テスト
+* https://employment.en-japan.com/engineerhub/entry/2019/10/03/103000[「単体テスト」再入門！ 開発の現場でバグを確実に洗い出す最適な手法と、テストケースの作り方 - エンジニアHub｜若手Webエンジニアのキャリアを考える！]
+
+* Test Doublesという概念を理解しよう
+** http://xunitpatterns.com/Test%20Double.html[Test Double at XUnitPatterns.com]
+
+=== Web
+Chromiumのアーキテクチャを通して、ブラウザの世界を垣間見る::
+* ブラウザはリモートからコードをダウンロードして、安全に動かす
+* [電子情報学特論：Chromiumのアーキテクチャを解き明かす \- Google スライド](https://docs.google.com/presentation/d/1AzBcuN-dmctk7v1IMZHivfpFAiXwCnsjyJS3wQ4sgE4/edit#slide=id.g8331da4ad6_0_51)
+
+ブラウザの話を通して、インターネットとその未来について学べるおすすめのPodcast episode, この話は初学者にも聞きやすい::
+* https://mozaic.fm/episodes/20/browser.html[ep20 Browser | mozaic.fm]
+* インターネットの話で、経験ベースでかなり広くTopicがカバーされている. webの未来をしみじみ考えちゃう、良エピソード
+
+=== Engineering
+SOFT SKILLS::
+* ソフトウェア開発者の人生マニュアル	本	
+* 人生の教え集
+* もはやソフト開発者は関係ないが、人生のあらゆること(恋愛も含む！)が紹介れている
+
+OTHER::
+* プログラミングに関するあまり知られていない７つの真実]	http://www.tommyjp.com/programming/blog-post_1710/		プログラミングとはどのような営みなのか？
+* https://employment.en-japan.com/engineerhub/entry/2019/10/29/103000[Javaなら「この書き方がベスト」と信じて書ける - きしだなおきに聞く、Javaのこれまでとこれから - エンジニアHub｜若手Webエンジニアのキャリアを考える！]
+* この感覚を得られるまで時間がかかると思うが、プロの大切な感覚の一つなんだろうな。
+> 結局、仕様を全て分かっている言語を使う方が、一番良い書き方ができるので。僕にとってはその言語がJavaです。基本的に、僕が書いたコードはJavaとしては最適なコードになっているはずなんです。ある処理を実現するために何通りもの方法があるうち、「この書き方がベストだ」と信じて書ける。どうしてその書き方を選んだのかをきちんと説明できますし、迷ったときもどこを調べればいいのか分かる。
+
+
+=== IT全般, 情報収集
+UNISYS技報::
+* 何より無料で、家まで月刊誌を届けてくれる
+* 結構コアな寄稿があったりして面白い
+
+IPA::
+* まとまったwhite paperがあったりする
+** https://www.ipa.go.jp/index.html[IPA 独立行政法人 情報処理推進機構]
+
+オンラインコース::
+* Coursera, Udacity
+
+Podcast::
+* Rebuild FM	
+
+ブログ::
+* 個人、企業含めて最新のトピックはブログから発信されることが多い
+* https://martinfowler.com/	ITの有名人	[Martin Fowler]
+* Feedlyでfollowするのがおすすめ
+
+国際会議、カンファレンス::
+
+Tech Company Report
+* https://www.akamai.com/jp/ja/resources/our-thinking/state-of-the-internet-report/[「インターネットの現状」レポート | Akamai JP]
+
+Coding Service::
+* プログラミング初級	https://typing.io/		・とにかく手を動かしてみるというのもあり
+* オンラインプログラミングチャレンジ			
+
+=== 科学
+統計::
+* https://www.jss.gr.jp/book/books/[周年記念事業関連｜日本統計学会]
+
+=== 一般教養	
+* テレビ		"NHKの番組とか結構いいのがある
+** 特集とか、クローズアップ現代、時論公論
+* https://www.jpx.co.jp/learning/index.html[セミナー・学習 | 日本取引所グループ]
+** 色々セミナーや教材がある

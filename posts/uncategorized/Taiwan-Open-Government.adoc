@@ -1,0 +1,36 @@
+---
+layout: post
+title: Taiwan_Open_Government
+date: 2020-11-01 09:31:03
+categories:
+- [CivicTech]
+tags:
+- CivicTech
+- Taiwan
+---
+
+== この記事の目的
+* AsciidocとHexoというStatic Site Generatorを使用してブログを構築する。
+* ブログはGithub Pagesにホスティングする
+
+++++
+<!-- more -->
+++++
+
+== 台湾政府のオープンガバメント関連で、見えるもの
+* https://data.gov.tw/[政府資料開放平臺 | 政府資料開放平臺]
+    ** 各種カテゴリごとにデータを公開して、一般利用できるようにしたもの
+
+* https://mask.pdis.nat.gov.tw/[口罩供需資訊平台]
+    ** コロナ対応で有名な、マスクの在庫マップ
+
+* https://pdis.nat.gov.tw/en/[Public Digital Innovation Space]
+    ** https://www.youtube.com/c/PdisTwGov/videos[PDIS - YouTube]
+* 探し中: 台湾協働会議の全討論がyoutubeに公開されているらしい
+
+== Next
+* よいまとめ
+    ** https://note.com/kjinnouchi/n/ne6681ec83da6?magazine_key=m9473920e8524[シビックテックに参加する10の方法｜陣内 一樹（Code for Japan）｜note]
+* 活動してみる
+    ** https://www.code4japan.org/activity/community[Slack コミュニティ - Code for JapanCode for Japan] 
+    *

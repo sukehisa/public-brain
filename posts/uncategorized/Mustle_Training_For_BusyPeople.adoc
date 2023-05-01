@@ -1,0 +1,48 @@
+---
+title: 限られた時間で効率よく筋トレをする方法
+date: 2018-09-11 07:36:55
+updated: 2019/01/20
+categories: [HowTo]
+tags:
+- Health
+---
+
+== この記事の目的
+* 社会人には時間が無い。限られた時間で効率よく、80点を目指すような筋トレ方法を紹介する。
+
+++++
+<!-- more -->
+++++
+
+== モチベーション：
+* #定期的な運動#は人生の早い内から、人生の習慣にすべき事柄の1つだ。
+** 特に、1日の多くの時間を座っていることに費やすエンジニアにとっては、この習慣があるかで様々な健康リスクの大きさが変わってくるはず
+** 筋肉を身にまとえば、疲れにくくなったり、何より達成感があるため、精神的な健康増進にもつながる。
+
+== 短い時間でも十分に筋トレができる
+* いろいろ試したが、最近見つけたこのNHKが公開している動画が一番良かった。
+* いつものNHKのみんなの体操・・かと思いきや、ムキムキの人が筋トレを教えてくれる。
+* しかも、5分以内で十分に追い込むことができる
+* 腕立て、腹筋、スクワット、背筋の4つの動画がある。これをローテーションで夜に行っている
+* 冒頭の谷本さんのコメントが私の需要にパーフェクトマッチ
+----
+筋トレは闇雲に回数を重ねても効果はありません。
+強い刺激を加え、要領よく筋肉を追い込みましょう。
+----
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WndOChZSjTk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1GanGLmDt2I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PyJOEt2nsGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IHYOhDe4FB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+++++
+
+== Season2!!
+* Season2も最高だぜ
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOXnaKt8ejw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cjvgjxIra9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nBj8WEq97s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S58grwmYQhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++

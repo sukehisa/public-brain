@@ -1,0 +1,25 @@
+---
+title: Macで画面操作の自動化
+date: 2018-09-29 13:12:30
+updated:
+categories: [HowTo]
+tags:
+- Mac
+---
+
+== この記事の目的
+Mac上での画面操作を自動化する必要があったので、いろいろ調べた結果をまとめる。
+
+++++
+<!-- more -->
+++++
+
+== 使えるツール
+* Automator
+** Mac標準機能。いろいろできるが、マウス操作は厳しいので、下記2つのツールを使用する。
+* http://www.murgaa.com/macro-recorder-mac/[Macro Recorder for Macintosh]
+** Record->Replayタイプのツール。正確に操作しないと、Replayを繰り返したときに、微妙なズレが蓄積していってしまうので、きれいにRecordすることが寛容。
+** 非常に、楽に自動化できるが、Replay3回以上すると、異常に遅くなる事象が発生。（原因は不明）
+* http://www.murgaa.com/mac-auto-mouse-click/[Automate Mouse Clicking with Mac Auto Mouse Click]
+** もっとPixelレベルでマウス操作を指定できる。きっちり、script化したい人はこっちのほうが良いかも。（私はこっちのタイプ）
+** 有料でPaypalで払うと登録ができる。

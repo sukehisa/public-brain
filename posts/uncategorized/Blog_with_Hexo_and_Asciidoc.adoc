@@ -1,0 +1,168 @@
+---
+title: HexoとAsciidocでブログ構築
+date: 2018-08-23 10:45:22
+categories:
+- [HowTo, Blog]
+tags: 
+- Hexo
+- Asciidoc
+- blog
+---
+
+
+== この記事の目的
+* AsciidocとHexoというStatic Site Generatorを使用してブログを構築する。
+* ブログはGithub Pagesにホスティングする
+
+++++
+<!-- more -->
+++++
+
+== モチベーション
+* 何よりも、なんでもAsciidocで書きたい。 +
+ここ数年のメモ取りはすべてAsciidocで書いている。Markdownより少し難しいくらいの文法で、かなり記述性が高いと思う。
+ただ、ほとんどのブログサービスはAsciidocをサポートしておらず、Markdownのみをサポートしているのが現状と思われる。
+* したがって、Asciidocでブログを書くために、構築方法を検討した。
+
+== 検討した選択肢
+* Static Content Generation系が良さそうということに。
+* ただし、この業界は大量に似たものがあるようで、その中から使いやすいものを選定する必要があった。
+** https://www.staticgen.com/[StaticGen | Top Open Source Static Site Generators]
+*** ものすごいたくさんある・・・・
+
+=== hubpress
+* hubpressはブラウザ上でlive previewしながら記事をかけるといった期待できそうなプロジェクトだが、現段階ではまだ問題が多そう。現に使ってみると、投稿時に無限ループになり、うまく行かなかった。
+** https://github.com/HubPress/hubpress.io[HubPress/hubpress.io: A web application to build your blog on GitHub]
+
+=== Hexo
+* これにした。CLIもシンプルだし、themesやpluginも比較的多く、拡張しやすそうだと思った。
+* ページ生成も早い。
+
+
+== Hexoを使ってのブログ構築
+=== Installation
+- npm install hexo
+- npm install node-sass
+- npm install hexo-deployer-git
+
+- github向けには公開鍵を登録しておくこと
+
+=== プラグイン
+* asciidoc用のプラグインを追加
+** https://github.com/hcoona/hexo-renderer-asciidoc[hcoona/hexo-renderer-asciidoc: Asciidoc renderer plugin for Hexo]
+
+=== Hexoの使いかた
+* とっても簡単。基本は以下の4ステップ
+
+==== hexo clean
+* source配下に配置された記事ファイル(adoc,md)から過去に生成されたファイルも削除する
+** publicフォルダ配下にある
+
+----
+$ hexo clean
+----
+
+==== hexo new で記事を作成
+* postで公開記事を作成する
+----
+$ hexo new
+----
+
+==== hexo generateで記事を生成
+* sourceに存在する記事ファイルから、記事を生成
+----
+$ hexo generate // 記事を生成
+$ hexo generate -d // -d: 記事を生成後、デプロイ
+----
+
+==== 生成した記事をgithub pagesにdeployする
+----
+$ hexo deploy
+----
+
+=== 採用したテーマ
+* hiero　というテーマを採用。検索もできて良い感じ
+** https://github.com/iTimeTraveler/hexo-theme-hiero[iTimeTraveler/hexo-theme-hiero: An awesome magazine, blog theme for your Hexo site.]
+* DISQUSにも対応しているので、enableにした
+* TOC（目次）もちゃんと出る
+
+* git clone https://github.com/iTimeTraveler/hexo-theme-hiero.git themes/hiero
+* _config.ymlでthemeを指定すること
+
+== いろいろ試す
+=== 画像の貼り方
+* 公式ドキュメントどおり、設定する
+** https://hexo.io/docs/asset-folders[Asset Folders | Hexo]
++
+----
+post_asset_folder: true
+----
+
+** hexo newすると、記事と同名のフォルダが作成される。ここのファイルも一緒にdeployされるようになる
+
+* github pagesの画像
+** このブログはgithub pagesにホスティングしているため、画像もそれを参照する
+** hexo deployすると、こんな感じで、ページと同階層に画像ファイルがpushされる
+ image:https://raw.githubusercontent.com/sukehisa/sukehisa.github.io/master/2018/08/23/HexoとAsciidocでブログ構築/2018-08-23-11-58-28.png[hexo deployしたときのgithub上のファイル状態]
+
+** pushしたら、画像のRaw URLを指定して表示できる
+image:https://raw.githubusercontent.com/sukehisa/sukehisa.github.io/master/2018/08/23/HexoとAsciidocでブログ構築/testimg.png[イメージ表示のテスト]
+
+** 書き方（普通のasciidocの記法）
+----
+// asciidocでURL直指定
+* image:https://raw.githubusercontent.com/sukehisa/sukehisa.github.io/master/2018/08/23/hoge/testimg.png[イメージ表示のテスト]
+----
+
+** もっと楽に各方法がないか模索中。。
+
+=== gistのソースコード埋め込み
+* 普通に埋め込める
+++++
+<script src="https://gist.github.com/sukehisa/8f4eaa849f59dd395dacca8a30107e6f.js"></script>
+++++
+
+* こうやって書く
+----
+++++
+<script src="https://gist.github.com/sukehisa/8f4eaa849f59dd395dacca8a30107e6f.js"></script>
+++++
+----
+
+=== Excerpt(記事概要）機能
+* 公式のドキュメントはMarkdownのやり方なのでうまくいかない
+** https://hexo.io/docs/tag-plugins#Post-Excerpt[Tag Plugins | Hexo]
+* このように、そのままmoreラベルを出力するように回避
+----
+++++
+<!-- more -->
+++++
+----
+
+=== categories, tagsページの生成
+* 各postで設定したcategory, tagをサマリーするページをhexo自体の機能で作れるが、少しハマったのでメモ
+* まず、tagsとcategories用の　page　を作る
+----
+$ hexo new page tags
+$ hexo new page categories
+----
+
+* 次に、生成されたindex.mdのヘッダ部分に書きを追記する
+** layoutはtags, categories
+** commentsはfalseにしないと、コメント欄が出てきてしまう
++
+----
+---
+title: XXXXX
+date: 2017-04-04 17:21:30
+layout: "categories"  
+comments: false
+---
+----
+
+** 結構ハマった・・中国語はなんとか読めるので助かった
+*** https://github.com/iTimeTraveler/hexo-theme-hiero/issues/3[head-menu和站内搜索 · Issue #3 · iTimeTraveler/hexo-theme-hiero]
+
+== その他TODO
+* このブログの検索どうやるんだろう
+** https://tech.qookie.jp/[Qookie Tech]

@@ -1,0 +1,46 @@
+---
+title: 知らない曲のタイトルを見つける方法
+date: 2018-12-22 23:23:14
+updated:
+categories:
+- [HowTo]
+tags:
+- Music
+---
+
+== この記事の目的
+* 曲のリズムやフレーズは分かるが、曲名が分からないときに頼りになる曲を紹介する。
+
+++++
+<!-- more -->
+++++
+
+時々あるのだが、ふとした瞬間にリズムをハミングしているが、曲名がわからない。でも、その曲をフルで聞きたい。
+最近海外出張だったのだが、その際にプールサイドで聞こえた曲が最近頭を離れないので、曲名を調べてみたのだが、そのときに役立ったアプリ・サービスを紹介する。
+
+
+== アプリ: SoundHound
+多分、いちばん有名なアプリ。実際の曲を聞かせるだけじゃなくて、鼻歌（ハミング）にも対応している。
+しかし、、今回探している曲はどんなに頑張っても見つけることができなかった。
+
+
+== サービス: Midomi
+ブラウザで利用できるサービス。録音して曲を再生できるが、これでも見つけることができなかった。
+https://www.midomi.com/[Search for Music Using Your Voice by Singing or Humming, View Music Videos, Join Fan Clubs, Share with Friends, Be Discovered and Much More For Free! - midomi.com]
+
+== 人力サービス:WatZatSong?
+AIで見つけることができなかったので、最終的には人力に頼る。
+
+https://www.watzatsong.com/en[WatZatSong.com | Let the community name your tunes!]
+
+鼻歌を投稿し、20分ほどで回答が来た！これだ！！
+
+image::2018-12-22-23-33-01.png[]
+
+== 今回探していた曲はこれ
+結構くせになる曲。Vacation+Concentrate+Romanceのムードなイメージ
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Y6Nne8RvaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
+
